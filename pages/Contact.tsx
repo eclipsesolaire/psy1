@@ -1,5 +1,5 @@
 // src/pages/Contact.jsx
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { MdOutlinePhone, MdOutlineAttachEmail } from 'react-icons/md';
 import Footer from '../navigation/Footer'

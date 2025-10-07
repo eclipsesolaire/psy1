@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { FiUser, FiSmile, FiUsers, FiBookOpen, FiVideo } from 'react-icons/fi';
 import { NavLink, useLocation } from 'react-router-dom';
 import Footer from '../navigation/Footer'
 
 export default function Accueil() {
   const location = useLocation();
+  
 
   useEffect(() => {
     // Si on arrive avec un état de scroll, faire défiler vers la section
@@ -44,7 +45,7 @@ export default function Accueil() {
 
         <div className="md:w-[60%] w-full flex justify-center items-center p-8">
           <img
-            src="psychologues.png"
+            src="/cabinet-2.jpg"
             alt="Illustration psychologue"
             className="w-full max-w-[600px] h-auto rounded-xl object-cover"
             style={{ backgroundColor: '#eaeffb' }}
@@ -56,7 +57,7 @@ export default function Accueil() {
       <section id="questions" className="flex flex-col-reverse md:flex-row bg-white mt-10 px-4">
         <div className="w-full p-4 md:w-1/2 flex justify-center items-center">
           <img
-            src="question-jpg.jpg"
+            src="/cabinet-1.webp"
             alt="Illustration questions"
             className="h-auto rounded-lg object-contain"
             style={{ backgroundColor: '#eaeffb' }}
@@ -78,7 +79,7 @@ export default function Accueil() {
         </section>
 
       {/* Section Tarifs */}
-      <section id="tarifs" className="w-full bg-gray-200 py-6">
+      <section id="tarifs" className="mt-[90px] w-full bg-gray-200 py-6 ">
         <h1 className="text-2xl font-bold text-blue-900 text-center mt-8 mb-10">Mes tarifs</h1>
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
           {[
