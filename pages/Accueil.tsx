@@ -2,6 +2,8 @@ import { useEffect } from 'react';
 import { FiUser, FiSmile, FiUsers, FiBookOpen, FiVideo } from 'react-icons/fi';
 import { NavLink, useLocation } from 'react-router-dom';
 import Footer from '../navigation/Footer'
+import psychologues from '../psychologues.png';
+import questions from '../question-jpg.jpg';
 
 export default function Accueil() {
   const location = useLocation();
@@ -45,7 +47,7 @@ export default function Accueil() {
 
         <div className="md:w-[60%] w-full flex justify-center items-center p-8">
           <img
-            src="/cabinet-2.jpg"
+            src={psychologues}
             alt="Illustration psychologue"
             className="w-full max-w-[600px] h-auto rounded-xl object-cover"
             style={{ backgroundColor: '#eaeffb' }}
@@ -57,7 +59,7 @@ export default function Accueil() {
       <section id="questions" className="flex flex-col-reverse md:flex-row bg-white mt-10 px-4">
         <div className="w-full p-4 md:w-1/2 flex justify-center items-center">
           <img
-            src="/cabinet-1.webp"
+            src={questions}
             alt="Illustration questions"
             className="h-auto rounded-lg object-contain"
             style={{ backgroundColor: '#eaeffb' }}
